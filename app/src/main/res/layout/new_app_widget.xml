@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6d7b0"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="selection"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/appwidget_button_on"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/appwidget_button_on"
+        android:text="ON"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:clickable="false"
+        android:layout_gravity="top|bottom|center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="12dp" />
+    <Button
+        android:id="@+id/appwidget_button_off"
+        android:text="OFF"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:background="#ff0000"
+        android:layout_below="@+id/appwidget_button_on"
+        android:layout_alignLeft="@+id/appwidget_button_on"
+        android:layout_alignStart="@+id/appwidget_button_on" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="◀"
+        android:id="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/appwidget_button_off"
+        android:layout_toRightOf="@+id/appwidget_button_on"
+        android:layout_toEndOf="@+id/appwidget_button_on" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="▶"
+        android:id="@+id/button3"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/appwidget_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:layout_gravity="left|right|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/appwidget_text"
+        android:layout_alignStart="@+id/appwidget_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="発車ベル"
+        android:id="@+id/textView"
+        android:textColor="#000"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="18dp" />
+
+</RelativeLayout>
